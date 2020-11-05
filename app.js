@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-mongoose.connect("mongodb+srv://admin-arcane:<PASSWORD>@cluster0.ywbwq.mongodb.net/<DBNAME>", {
+mongoose.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.ywbwq.mongodb.net/<DBNAME>", {
     useNewUrlParser: true, 
     useCreateIndex: true, 
     useUnifiedTopology: true, 
